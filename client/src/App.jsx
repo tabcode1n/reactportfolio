@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router";
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Nav from "./components/Nav.jsx";
 // import layout from "./layout.jsx";
-import bootstrap from 'bootstrap' 
 import "./App.css";
 import "./index.css";
 
@@ -20,7 +19,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
     </>
   );

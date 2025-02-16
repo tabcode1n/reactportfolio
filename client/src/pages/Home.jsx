@@ -4,7 +4,10 @@ const Home = () => {
     return (
         <div>
         <navbar />
-        <h1>Home</h1>
+        
+           
+             <img src={service} alt="service.jpg" style={{ width: "300px", height: "300px" }} />
+        
         </div>
     );
     }
