@@ -1,11 +1,12 @@
-import React from "react";
+
 
 
 const About = () => {
   return (
     <div>
       <navbar />
-      <h1>About</h1>
+      <h1 className="title1">ABOUT</h1>
+      <h1 className="title2">ME</h1>
     </div>
   );
 }
