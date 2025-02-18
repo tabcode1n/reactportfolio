@@ -5,7 +5,8 @@ const Projects = () => {
   return (
     <div>
       <Navbar />
-      
+      <h1 className="title1">MY</h1>
+      <h1 className="title2">PROJECTS</h1>
 
 <div className="grid gap-4">
     <div>

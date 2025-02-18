@@ -1,4 +1,4 @@
-import react from "react";
+
 import self from "../images/self.jpg";
 import "./home.css";
 

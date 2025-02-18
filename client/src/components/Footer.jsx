@@ -1,4 +1,5 @@
-import React from "react";
+
+import "../app.css";
 
 
 const Footer = () => {
@@ -28,6 +29,9 @@ const Footer = () => {
         <li>
             <a href="#" className="hover:underline">Contact</a>
         </li>
+        <li>
+            <h1 className="footName">Tabitha Roost</h1>
+            </li>   
     </ul>
     
 

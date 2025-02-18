@@ -15,3 +15,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.footerName {
+    font-size: 10px!important;
+    font-family: Tan Mon Cheri;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
