@@ -6,3 +6,12 @@
 .text {
     color: white
 }
+
+body {
+    background-image: url("./images/cp.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
