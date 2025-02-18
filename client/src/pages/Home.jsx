@@ -1,15 +1,21 @@
-import react from 'react';
+import react from "react";
+import self from "../images/self.jpg";
+import "./home.css";
 
-const Home = () => {    
-    return (
-        <div>
-        <navbar />
-        
-           
-             <img src={service} alt="service.jpg" style={{ width: "300px", height: "300px" }} />
-        
-        </div>
-    );
-    }
+const Home = () => {
+  return (
+    <div>
+      <navbar />
+      <div className="container"></div>
+      <h1 className="title1">TABITHA</h1>
+      <h1 className="title2">ROOST</h1>
+      <div></div>
+      
+  <img className="h-auto max-w-lg ml-auto img1 " src= {self} alt="self.jpg" />
 
-    export default Home;
+      
+    </div>
+  );
+};
+
+export default Home;
