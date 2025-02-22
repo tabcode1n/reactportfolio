@@ -1,4 +1,5 @@
 
+// import Title from "../components/Title";
 import self from "../images/self.jpg";
 import "./home.css";
 import "../App.css";
@@ -9,7 +10,10 @@ const Home = () => {
     <div>
       <navbar />
       <div className="container"></div>
-      {/* <h1 className="title">TABITHA ROOST</h1>
+      {/* LIKE THIS? */}
+      {/* <Title title="TABITHA ROOST" /> */}
+      {/* OR LIKE THIS? */}
+      {/* <h1>{title}</h1> */}
       <div></div>
 
       {/* GRID */}
@@ -41,7 +45,7 @@ const Home = () => {
             {/* <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/> */}
         </div>
         <div>
-            <img className="h-auto max-w-full rounded-lg " src= {self} alt="self.jpg" />
+            <img className="h-auto max-w-full rounded-lg " src= {self} alt="self.jpg" style={{ width: "300px", height: "300px" }} />
             {/* <img className="h-auto max-w-full rounded-lg " src= {self} alt="self.jpg" /> */}
         </div>
         <div>
