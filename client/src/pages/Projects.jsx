@@ -1,10 +1,7 @@
 import Title from "../components/Title";
 import here from "../images/here.png";
 import chi from "../images/chi.png";            
-import web6 from "../images/web6.png";
 import code1 from "../images/code1.png";
-import code3 from "../images/code3.png";
-import che from "../images/che.png";
 import "../App.css";
 
 
@@ -34,10 +31,10 @@ const Projects = () => {
 
   return (
     <>
-      <div className="flex justify-end pr-8">
+      <div className="flex justify-start pl-8">
         <Title />
       </div>
-      <div className="container mx-auto px-4 pt-2 pb-40 min-h-screen bg-gray-900">
+      <div className="container mx-auto px-4 pt-2 pb-40 min-h-screen bg-gray-900 border-4 border-blue-500/30 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <a

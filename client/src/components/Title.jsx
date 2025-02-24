@@ -26,7 +26,7 @@ const Title = ({ className = 'page-title' }) => {
   return (
     <h1 className={`title ${className}`} style={{ marginTop: '100px' }}>
       <div 
-        className="transition-all duration-300 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+        className="transition-all duration-300 text-blue-500 shadow-lg shadow-blue-500/20"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
       >
         <span>

@@ -1,4 +1,4 @@
-import codePic from "../images/codePic.jpg";    
+import self2 from "../images/self2.jpg";    
 import Title from "../components/Title";
 
 
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                    <img className="h-auto max-w-full rounded-lg shadow-lg" src={codePic} alt="Profile" />
+                    <img className="h-auto max-w-full rounded-lg shadow-lg" src={self2} alt="Profile" />
                 </div>
             </div>
         </div>
