@@ -20,3 +20,11 @@
     height: 300px; 
     object-fit: cover;
 }
+
+.absolute {
+    transition: transform 0.3s ease;
+  }
+  
+  .absolute:hover {
+    transform: scale(1.05);
+  }
