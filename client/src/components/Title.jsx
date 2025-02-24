@@ -1,27 +1,49 @@
-
-
 // // CREATE IF ELSE LOGIC TO DISPLAY TITLE BASED ON URL
 
-// import React from 'react';
-// import { useLocation } from 'react-router-dom';
+import React from 'react';
+import { useLocation } from 'react-router';
+import PropTypes from 'prop-types';
+import "../App.css";
 
-// const Title = () => {
-//   const location = useLocation();
-//   let title;
+const Title = ({ className = 'page-title' }) => {
+  const location = useLocation();
+  let titleText;
 
-//   if (location.home === '/') {
-//     title = 'TABITHA ROOST';
-//   } else if (location.about === '/About') {
-//     title = 'ABOUT ME';
-//   } else if (location.contact === '/Contact') {
-//     title = 'CONTACT INFO';
-//   } else if (location.projects === '/Projects') {
-//         title = 'PROJECTS;
-//   } else {
-//     title = 'Page Not Found';
-//   }
+  if (location.pathname === '/') {
+    titleText = 'TABITHA ROOST';
+  } else if (location.pathname === '/about') {
+    titleText = 'PROFESSIONAL SUMMARY';
+  } else if (location.pathname === '/contact') {
+    titleText = 'CONTACT INFO';
+  } else if (location.pathname === '/projects') {
+    titleText = 'COMPLETED PROJECTS';
+  } else {
+    titleText = 'NOT FOUND';
+  }
 
-//   return <h1>{title}</h1>;
-// };
+  const words = titleText.split(' ');
+  
+  return (
+    <h1 className={`title ${className}`} style={{ marginTop: '100px' }}>
+      <div 
+        className="transition-all duration-300 hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
+      >
+        <span>
+          {words[0]}
+        </span>
+        <span style={{ marginLeft: `${words[0].length}ch` }}>
+          {words[1]}
+        </span>
+      </div>
+    </h1>
+  );
+};
 
-// export default Title;
+Title.propTypes = {
+
+  
+  className: PropTypes.string
+};
+
+export default Title;

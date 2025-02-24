@@ -5,10 +5,9 @@ const Footer = () => {
     <>
       <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
         <footer className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-          <span className="text-md text-white-500 sm:text-center dark:text-white-400">
-            {" "}
-            Tabitha Roost
-          </span>
+        <div className="flex items-center gap-4">
+        <a href="mailto:your.tabcode1n@gmail.com" target="_blank" rel="noopener noreferrer">
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -38,6 +37,9 @@ const Footer = () => {
               d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"
             ></path>
           </svg>
+          </a>
+          <a href="https://github.com/tabcode1n" target="_blank" rel="noopener noreferrer">
+
           <svg
             className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -53,6 +55,9 @@ const Footer = () => {
               clip-rule="evenodd"
             />
           </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/Tabitha-Roost" target="_blank" rel="noopener noreferrer">
+
           <svg
             className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -69,6 +74,12 @@ const Footer = () => {
             />
             <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
           </svg>
+          </a>
+          </div>
+          <span className="text-md text-white-500 sm:text-center dark:text-white-400">
+            {" "}
+            Tabitha Roost
+          </span>
         </footer>
       </footer>
     </>
